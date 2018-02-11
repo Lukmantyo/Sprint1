@@ -20,16 +20,18 @@ class Crud extends CI_Controller{
 	}
  
 	function tambah_aksi(){
-		$nama = $this->input->post('nama');
-		$alamat = $this->input->post('alamat');
-		$pekerjaan = $this->input->post('pekerjaan');
- 
+		$id = $this->input->post('id');
+		$username = $this->input->post('username');
+		$password = $this->input->post('password');
+		$fullname = $this->input->post('fullname');
+	 	$level = $this->input->post('level');
+
 		$data = array(
-			'Id' => $id,
-			'Username' => $username,
-			'Password' => $password,
-			'Fullname' => $fullname,
-			'Level' => $level
+			'id' => $id,
+			'username' => $username,
+			'password' => $password,
+			'fullname' => $fullname,
+			'level' => $level
 			);
 		$this->m_data->input_data($data,'user');
 		redirect('crud/index');
@@ -47,16 +49,17 @@ class Crud extends CI_Controller{
 		$this->load->view('v_edit',$data);
 	}
 	function update(){
-	$id = $this->input->post('Id');
-	$username = $this->input->post('Nama');
-	$password = $this->input->post('Password');
-	$fullname = $this->input->post('Fullname');
- 	$level = $this->input->post('Level');
+	$id = $this->input->post('id');
+	$username = $this->input->post('username');
+	$password = $this->input->post('password');
+	$fullname = $this->input->post('fullname');
+ 	$level = $this->input->post('level');
 	$data = array(
+		'id' => $id,
 		'username' => $username,
 		'password' => $password,
 		'fullname' => $fullname,
-		'level' => $level,
+		'level' => $level
 	);
  
 	$where = array(

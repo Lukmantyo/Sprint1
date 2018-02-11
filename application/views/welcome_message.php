@@ -70,11 +70,11 @@
       
       <div class="row">
         <div class="col-sm-4 col-xs-12">
-          <div id="gtco-logo"><a href="gudang/traveler/index.html">Traveler <em>.</em></a></div>
+          <div id="gtco-logo"><a href="gudang/traveler/index.html">Tiket Pesawat <em>.</em></a></div>
         </div>
         <div class="col-xs-8 text-right menu-1">
           <ul>
-            <li><a href="gudang/traveler/destination.html">Destination</a></li>
+            <li><a href="gudang/traveler/destination.html">Rute</a></li>
             <li class="has-dropdown">
               <a href="#">Travel</a>
               <ul class="dropdown">
@@ -84,7 +84,7 @@
                 <li><a href="#">Canada</a></li>
               </ul>
             </li>
-            <li><a href="gudang/traveler/pricing.html">Pricing</a></li>
+            <li><a href="gudang/traveler/pricing.html">Maskapai</a></li>
             <li><a href="gudang/traveler/contact.html">Contact</a></li>
           </ul> 
         </div>
@@ -93,7 +93,7 @@
     </div>
   </nav>
   
-  <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/img_bg_2.jpg)">
+  <header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(gudang/traveler/images/img_bg_2.jpg)">
     <div class="overlay"></div>
     <div class="gtco-container">
       <div class="row">
@@ -102,48 +102,61 @@
 
           <div class="row row-mt-15em">
             <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-              <h1>Planing Trip To Anywhere in The World?</h1> 
+              <h1>Ingin Berlibur atau Bepergian Keliling Dunia?</h1> 
             </div>
             <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
               <div class="form-wrap">
                 <div class="tab">
                   
-                  <div class="tab-content">
+                  <div class="tab-content" style="bottom: 100px; border-bottom:100px; "> 
                     <div class="tab-content-inner active" data-content="signup">
-                      <h3>Book Your Trip</h3>
+                      <h3>Booking Perjalananmu</h3>
                       <form action="#">
                         <div class="row form-group">
                           <div class="col-md-12">
-                            <label for="fullname">Your Name</label>
-                            <input type="text" id="fullname" class="form-control">
+                            <label for="name">Nama Anda</label>
+                            <input type="text" id="name" class="form-control">
+                          </div>
+                        </div>
+                        <form action="#">
+                        <div class="row form-group">
+                          <div class="col-md-12">
+                            <label for="address">Alamat</label>
+                            <input type="text" id="address" class="form-control">
+                          </div>
+                        </div>
+                        <form action="#">
+                        <div class="row form-group">
+                          <div class="col-md-12">
+                            <label for="phone">Nomor Telepon</label>
+                            <input type="text" id="phone" class="form-control">
                           </div>
                         </div>
                         <div class="row form-group">
                           <div class="col-md-12">
-                            <label for="activities">Activities</label>
-                            <select name="#" id="activities" class="form-control">
-                              <option value="">Activities</option>
-                              <option value="">Hiking</option>
-                              <option value="">Caving</option>
-                              <option value="">Swimming</option>
+                            <label for="gender">Jenis Kelamin</label>
+                            <select name="#" id="gender" class="form-control">
+                              <option value=""></option>
+                              <option value="">Laki-laki</option>
+                              <option value="">Perempuan</option>
                             </select>
                           </div>
                         </div>
                         <div class="row form-group">
                           <div class="col-md-12">
-                            <label for="destination">Destination</label>
+                            <label for="destination">Rute</label>
                             <select name="#" id="destination" class="form-control">
-                              <option value="">Philippines</option>
-                              <option value="">USA</option>
-                              <option value="">Australia</option>
-                              <option value="">Singapore</option>
+                              <option value="">Asia</option>
+                              <option value="">Eropa</option>
+                              <option value="">Lokal</option>
+                              <option value="">Lainnya</option>
                             </select>
                           </div>
                         </div>
                         
                         <div class="row form-group">
                           <div class="col-md-12">
-                            <label for="date-start">Date Travel</label>
+                            <label for="date-start">Tanggal</label>
                             <input type="text" id="date-start" class="form-control">
                           </div>
                         </div>
@@ -155,7 +168,6 @@
                         </div>
                       </form> 
                     </div>
-
                     
                   </div>
                 </div>
@@ -173,8 +185,8 @@
     <div class="gtco-container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-          <h2>Most Popular Destination</h2>
-          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+          <h2>Destinasi Populer</h2>
+          <p>Berisikan beberapa destinasi liburan atau bepergian favorit para turis. Berikut destinasinya :</p>
         </div>
       </div>
       <div class="row">
@@ -186,9 +198,9 @@
               <img src="gudang/traveler/images/img_1.jpg" alt="Image" class="img-responsive">
             </figure>
             <div class="fh5co-text">
-              <h2>New York, USA</h2>
-              <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-              <p><span class="btn btn-primary">Schedule a Trip</span></p>
+              <h2>New York, Amerika</h2>
+              <p>New York adalah kota terpadat di Amerika Serikat.</p>
+              <p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
             </div>
           </a>
         </div>
@@ -199,7 +211,7 @@
               <img src="gudang/traveler/images/img_2.jpg" alt="Image" class="img-responsive">
             </figure>
             <div class="fh5co-text">
-              <h2>Seoul, South Korea</h2>
+              <h2>Seoul, Korea Selatan</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
               <p><span class="btn btn-primary">Schedule a Trip</span></p>
             </div>
@@ -212,7 +224,7 @@
               <img src="gudang/traveler/images/img_3.jpg" alt="Image" class="img-responsive">
             </figure>
             <div class="fh5co-text">
-              <h2>Paris, France</h2>
+              <h2>Paris, Perancis</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
               <p><span class="btn btn-primary">Schedule a Trip</span></p>
             </div>
@@ -241,7 +253,7 @@
               <img src="gudang/traveler/images/img_5.jpg" alt="Image" class="img-responsive">
             </figure>
             <div class="fh5co-text">
-              <h2>Greece, Europe</h2>
+              <h2>Roma, Eropa</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
               <p><span class="btn btn-primary">Schedule a Trip</span></p>
             </div>
@@ -255,7 +267,7 @@
               <img src="gudang/traveler/images/img_6.jpg" alt="Image" class="img-responsive">
             </figure>
             <div class="fh5co-text">
-              <h2>Spain, Europe</h2>
+              <h2>Jepang, Asia</h2>
               <p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
               <p><span class="btn btn-primary">Schedule a Trip</span></p>
             </div>
@@ -270,8 +282,8 @@
     <div class="gtco-container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-          <h2>How It Works</h2>
-          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+          <h2>Cara Booking</h2>
+          <p>Berikut adalah cara untuk booking melalui website kami</p>
         </div>
       </div>
       <div class="row">
@@ -280,8 +292,8 @@
             <span class="icon">
               <i>1</i>
             </span>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <h3>Isi Data Pada Booking Perjalanan</h3>
+            <p>Isi Booking Perjalanan dengan data diri anda yang valid. Isikan juga tanggal keberangkatan yang ingin anda booking.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
@@ -289,8 +301,8 @@
             <span class="icon">
               <i>2</i>
             </span>
-            <h3>Consectetur adipisicing elit</h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <h3>Konfirmasi Data</h3>
+            <p>Setelah menekan tombol 'Submit', akan muncul halaman berisikan data diri yang telah anda masukkan. Apabila sudah benar tekan 'OK' jika belum, tekan 'Cancel'.</p>
           </div>
         </div>
         <div class="col-md-4 col-sm-6">
@@ -298,8 +310,8 @@
             <span class="icon">
               <i>3</i>
             </span>
-            <h3>Dignissimos asperiores vitae</h3>
-            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+            <h3>Pembayaran dan Pemberangkatan</h3>
+            <p>Jika semua data telah benar, anda akan masuk ke laman pembayaran untuk membayar tiket yang telah dibooking. Setelah itu anda dapat berlibur tanpa khawatir !</p>
           </div>
         </div>
         
@@ -314,7 +326,7 @@
     <div class="gtco-container text-center">
       <div class="display-t">
         <div class="display-tc">
-          <h1>We have high quality services that you will surely love!</h1>
+          <h1>Kami memiliki servis berkualitas tinggi yang mungkin anda sukai !</h1>
         </div>  
       </div>
     </div>
@@ -325,8 +337,8 @@
 
       <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center gtco-heading animate-box">
-          <h2>Our Success</h2>
-          <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+          <h2>Kesuksesan Kami</h2>
+          <p>Agen kami telah mencatatkan banyak kesuksesan dalam perjalanan. Prioritas kami adalah kesenangan pelanggan dan keselamatan perjalanan.</p>
         </div>
       </div>
 
@@ -334,59 +346,31 @@
         
         <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
           <div class="feature-center">
-            <span class="counter js-counter" data-from="0" data-to="196" data-speed="5000" data-refresh-interval="50">1</span>
-            <span class="counter-label">Destination</span>
+            <span class="counter js-counter" data-from="0" data-to="57" data-speed="5000" data-refresh-interval="50">1</span>
+            <span class="counter-label">Rute</span>
 
           </div>
         </div>
         <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
           <div class="feature-center">
-            <span class="counter js-counter" data-from="0" data-to="97" data-speed="5000" data-refresh-interval="50">1</span>
-            <span class="counter-label">Hotels</span>
+            <span class="counter js-counter" data-from="0" data-to="69" data-speed="5000" data-refresh-interval="50">1</span>
+            <span class="counter-label">Hotel</span>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
           <div class="feature-center">
-            <span class="counter js-counter" data-from="0" data-to="12402" data-speed="5000" data-refresh-interval="50">1</span>
-            <span class="counter-label">Travelers</span>
+            <span class="counter js-counter" data-from="0" data-to="15678" data-speed="5000" data-refresh-interval="50">1</span>
+            <span class="counter-label">Jumlah Turis</span>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 animate-box" data-animate-effect="fadeInUp">
           <div class="feature-center">
-            <span class="counter js-counter" data-from="0" data-to="12202" data-speed="5000" data-refresh-interval="50">1</span>
-            <span class="counter-label">Happy Customer</span>
+            <span class="counter js-counter" data-from="0" data-to="9000" data-speed="5000" data-refresh-interval="50">1</span>
+            <span class="counter-label">Pelanggan yang Senang</span>
 
           </div>
         </div>
           
-      </div>
-    </div>
-  </div>
-
-  
-
-  <div id="gtco-subscribe">
-    <div class="gtco-container">
-      <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-          <h2>Subscribe</h2>
-          <p>Be the first to know about the new templates.</p>
-        </div>
-      </div>
-      <div class="row animate-box">
-        <div class="col-md-8 col-md-offset-2">
-          <form class="form-inline">
-            <div class="col-md-6 col-sm-6">
-              <div class="form-group">
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Your Email">
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <button type="submit" class="btn btn-default btn-block">Subscribe</button>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
   </div>
@@ -397,20 +381,19 @@
 
         <div class="col-md-4">
           <div class="gtco-widget">
-            <h3>About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eos molestias quod sint ipsum possimus temporibus officia iste perspiciatis consectetur in fugiat repudiandae cum. Totam cupiditate nostrum ut neque ab?</p>
+            <h3>Tentang Kami</h3>
+            <p>Website ini dibuat semata-mata untuk persiapan UKK. Saya sangat berterima kasih kepada seluruh pihak yang terlibat, terutama teman sekelas dan guru kami. Serta kepada pembuat template ini.
+            oleh Muhammad Lukman R.</p>
           </div>
         </div>
 
         <div class="col-md-2 col-md-push-1">
           <div class="gtco-widget">
-            <h3>Destination</h3>
+            <h3>Rute</h3>
             <ul class="gtco-footer-links">
-              <li><a href="#">Europe</a></li>
-              <li><a href="#">Australia</a></li>
+              <li><a href="#">Eropa</a></li>
               <li><a href="#">Asia</a></li>
-              <li><a href="#">Canada</a></li>
-              <li><a href="#">Dubai</a></li>
+              <li><a href="#">Lokal</a></li>
             </ul>
           </div>
         </div>
@@ -419,11 +402,11 @@
           <div class="gtco-widget">
             <h3>Hotels</h3>
             <ul class="gtco-footer-links">
-              <li><a href="#">Luxe Hotel</a></li>
-              <li><a href="#">Italy 5 Star hotel</a></li>
-              <li><a href="#">Dubai Hotel</a></li>
-              <li><a href="#">Deluxe Hotel</a></li>
-              <li><a href="#">BoraBora Hotel</a></li>
+              <li><a href="#">Hotel Aston</a></li>
+              <li><a href="#">Hotel Orlando</a></li>
+              <li><a href="#">Winterspell Hotel</a></li>
+              <li><a href="#">Landreic Hotel</a></li>
+              <li><a href="#">HuraHura Hotel</a></li>
             </ul>
           </div>
         </div>
@@ -433,7 +416,7 @@
             <h3>Get In Touch</h3>
             <ul class="gtco-quick-contact">
               <li><a href="#"><i class="icon-phone"></i> +1 234 567 890</a></li>
-              <li><a href="#"><i class="icon-mail2"></i> info@GetTemplates.co</a></li>
+              <li><a href="#"><i class="icon-mail2"></i> lukmantyo26@gmail.com</a></li>
               <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
             </ul>
           </div>
@@ -444,7 +427,7 @@
       <div class="row copyright">
         <div class="col-md-12">
           <p class="pull-left">
-            <small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
+            <small class="block">&copy; 2018 Tiket Pesawat. All Rights Reserved.</small> 
             <small class="block">Designed by <a href="http://GetTemplates.co/" target="_blank">GetTemplates.co</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></small>
           </p>
           <p class="pull-right">
