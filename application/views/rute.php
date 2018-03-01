@@ -28,29 +28,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/icomoon.css">
 	<!-- Themify Icons-->
-	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/themify-icons.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/magnific-popup.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/bootstrap-datepicker.min.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/owl.theme.default.min.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -70,22 +70,13 @@
 			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">Tiket Pesawat<em>.</em></a></div>
+					<div id="gtco-logo"><a href="<?php echo base_url(); ?>">Tiket Pesawat<em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li class="active"><a href="destination.html">Rute</a></li>
-						<li class="has-dropdown">
-							<a href="#">Travel</a>
-							<ul class="dropdown">
-								<li><a href="eropa.html">Europe</a></li>
-								<li><a href="asia.html">Asia</a></li>
-								<li><a href="lokal.html">Lokal</a></li>
-								<li><a href="lainnya.html">Lainnya</a></li>
-							</ul>
-						</li>
-						<li><a href="pricing.html">Maskapai</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li class="active"><a href="<?php echo base_url(); ?>welcome/rute">Rute</a></li>
+						<li><a href="<?php echo base_url(); ?>welcome/login">Login</a></li>
+						<li><a href="<?php echo base_url(); ?>welcome/contact">Contact</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -122,83 +113,40 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_1.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/sabang.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/sabang.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Inggris, Eropa</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Sabang, Aceh</h2>
+							<p>Sebuah pulau yang terletak di ujung barat Indonesia.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_2.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/aceh.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_2.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/aceh.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Jerman, Eropa</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Banda Aceh, Aceh</h2>
+							<p>Provinsi dengan julukan Serambi Aceh, dengan wisata religiusnya.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_3.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/palembang.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/palembang.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Perancis, Eropa</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
-						</div>
-					</a>
-				</div>
-
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_4.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Jepang, Asia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_5.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Korea Selatan, Asia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_6.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>China, Asia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Palembang, Sumatera Barat</h2>
+							<p>Sebuah kota di Sumatera Barat, terkenal dengan jembatan Ampera.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
@@ -206,23 +154,66 @@
 
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_1.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/baturaden.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/baturaden.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Bali, Indonesia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Baturraden, Purwokerto</h2>
+							<p>Wisata alam yang terletak di kaki Gunung Slamet.</p>
+							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/yogya.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/yogya.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Yogyakarta, Indonesia</h2>
+							<p>Kota dengan budaya Jawa yang sangat kental.</p>
+							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/gunungbromo.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/gunungbromo.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Gunung Bromo, Jawa Timur</h2>
+							<p>Wisata dengan gunung yang terkenal saat matahari terbitnya.</p>
+							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
+						</div>
+					</a>
+				</div>
+
+
+				<div class="col-lg-4 col-md-4 col-sm-6">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/jakarta.jpg" class="fh5co-card-item image-popup">
+						<figure>
+							<div class="overlay"><i class="ti-plus"></i></div>
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/jakarta.jpg" alt="Image" class="img-responsive">
+						</figure>
+						<div class="fh5co-text">
+							<h2>Jakarta, Ibu Kota Jakarta</h2>
+							<p>Ibukota Indonesia, kota metropolitan terbesar di Indonesia.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_2.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/papua.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_2.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/papua.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
 							<h2>Papua, Indonesia</h2>
@@ -232,14 +223,14 @@
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_3.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/bali.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/bali.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Jakarta, Indonesia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Pulau Bali, Bali</h2>
+							<p>Destinasi liburan yang terkenal di dunia. Dengan keindahan laut serta budaya.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
@@ -247,42 +238,42 @@
 
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_4.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/rajaampat.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/rajaampat.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Rusia</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Raja Ampat, Papua</h2>
+							<p>Destinasi yang terkenal dengan keindahan lautnya.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_5.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/wamena.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/wamena.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Antartika</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Wamena, Papua</h2>
+							<p>Terkenal dengan Festival Lembah Baliemnya yang sudah mendunia.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
 				</div>
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_6.jpg" class="fh5co-card-item image-popup">
+					<a href="<?php echo base_url(); ?>gudang/traveler/images/komodo.jpg" class="fh5co-card-item image-popup">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
+							<img src="<?php echo base_url(); ?>gudang/traveler/images/komodo.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Afrika</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
+							<h2>Pulau Komodo, Nusa Tenggara</h2>
+							<p>Pulau yang terkenal akan suaka komodonya.</p>
 							<p><span class="btn btn-primary">Jadwalkan Perjalanan</span></p>
 						</div>
 					</a>
@@ -308,10 +299,10 @@
           <div class="gtco-widget">
             <h3>Rute</h3>
             <ul class="gtco-footer-links">
-              <li><a href="eropa.html">Eropa</a></li>
-              <li><a href="asia.html">Asia</a></li>
-              <li><a href="lokal.html">Lokal</a></li>
-              <li><a href="lainnya.html">Lainnya</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/eropa.html">Eropa</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/asia.html">Asia</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/lokal.html">Lokal</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/lainnya.html">Lainnya</a></li>
             </ul>
           </div>
         </div>
@@ -370,31 +361,31 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.waypoints.min.js"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/owl.carousel.min.js"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.countTo.js"></script>
 
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.stellar.min.js"></script>
 
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.magnific-popup.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/magnific-popup-options.js"></script>
 	
 	<!-- Datepicker -->
-	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/bootstrap-datepicker.min.js"></script>
 	
 
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/main.js"></script>
 
 	</body>
 </html>

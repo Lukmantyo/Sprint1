@@ -89,56 +89,49 @@
           <div class="row">
             <div class="col-md-12 col-md-offset-0 text-left">
               <div class="row row-mt-15em">
-                <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                  <h1>Cari Destinasi Liburan Anda !</h1>  
-                </div>
-                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                <div class="col-md-12 mt-text animate-box form-wrap" data-animate-effect="fadeInUp">
+                  <h1>Isi data diri & Tempat duduk</h1>  
+                  
                   <div class="form-wrap">
-                    <div class="tab">
+                    <div class="tab" style="margin-top: 20px">
                       <div class="tab-content" style="bottom: 30px; border-bottom:100px; "> 
                         <div class="tab-content-inner active" data-content="signup">
-                          <h3>Temukan Perjalanan</h3>
-                          <form action="<?php echo base_url('welcome/cari'); ?>" method="get">
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="from">Rute Dari</label>
-                                <select name="from" id="from" class="form-control" required>
-                                  <?php foreach ($rute as $row): ?>
-                                    <option value="<?php echo $row->rute_from; ?>"><?php echo $row->rute_from; ?></option>
-                                  <?php endforeach ?>
-                                </select>
-                              </div>
-                            </div>
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="to">Rute Dari</label>
-                                <select name="to" id="to" class="form-control" required>
-                                  <?php foreach ($rute as $row): ?>
-                                    <option value="<?php echo $row->rute_to; ?>"><?php echo $row->rute_to; ?></option>
-                                  <?php endforeach ?>
-                                </select>
-                              </div>
-                            </div>
-
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="tanggal">Tanggal</label>
-                                <input type="date" name="tanggal" id="tanggal" class="form-control" required>
-                              </div>
-                            </div>
-
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <input type="submit" class="btn btn-primary btn-block" value="Kirim">
-                              </div>
-                            </div>
-                          </form> 
+                          <div class="row">
+                            <div class="col-md-12"><h3>Pembayaran</h3></div>
+                            
+                            <div class="col-md-12">
+                              
+                              <table class="table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th>Jasa Bank</th>
+                                    <th>No. Rekening</th>
+                                    <th>A/n. </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Mandiri</td>
+                                    <td>3027472837486</td>
+                                    <td>TiketPesawat</td>
+                                  </tr>
+                                </tbody>
+                                <tfoot>
+                                  <tr>
+                                    <td colspan="3">Kode Reservasi: <input type="text" value="<?php echo $rescode; ?>" class="form-control" disabled></td>
+                                  </tr>
+                                </tfoot>
+                              </table>
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>

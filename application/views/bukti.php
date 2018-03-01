@@ -89,56 +89,62 @@
           <div class="row">
             <div class="col-md-12 col-md-offset-0 text-left">
               <div class="row row-mt-15em">
-                <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                  <h1>Cari Destinasi Liburan Anda !</h1>  
-                </div>
-                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                <div class="col-md-12 mt-text animate-box form-wrap" data-animate-effect="fadeInUp">
+                  <h1>Isi data diri & Tempat duduk</h1>  
+                  
                   <div class="form-wrap">
-                    <div class="tab">
+                    <div class="tab" style="margin-top: 20px">
                       <div class="tab-content" style="bottom: 30px; border-bottom:100px; "> 
                         <div class="tab-content-inner active" data-content="signup">
-                          <h3>Temukan Perjalanan</h3>
-                          <form action="<?php echo base_url('welcome/cari'); ?>" method="get">
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="from">Rute Dari</label>
-                                <select name="from" id="from" class="form-control" required>
-                                  <?php foreach ($rute as $row): ?>
-                                    <option value="<?php echo $row->rute_from; ?>"><?php echo $row->rute_from; ?></option>
-                                  <?php endforeach ?>
-                                </select>
+                          
+                          <div class="row">
+                            <div class="col-md-12"><h3>Upload Bukti Pembayaran</h3></div>
+                            <?php if (isset($_SESSION['error']) || isset($_SESSION['success'])): ?>
+                              <div class="row">
+                                <?php if (isset($_SESSION['error'])): ?>
+                                  <div class="col-md-12 alert alert-danger">
+                                    <?php echo $_SESSION['error']; ?>
+                                  </div>
+                                <?php endif ?>
+                                <?php if (isset($_SESSION['success'])): ?>
+                                  <div class="col-md-12 alert alert-success">
+                                    <?php echo $_SESSION['success']; ?>
+                                  </div>
+                                <?php endif ?>
                               </div>
-                            </div>
+                            <?php endif ?>
+                            <div class="col-md-12">
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="to">Rute Dari</label>
-                                <select name="to" id="to" class="form-control" required>
-                                  <?php foreach ($rute as $row): ?>
-                                    <option value="<?php echo $row->rute_to; ?>"><?php echo $row->rute_to; ?></option>
-                                  <?php endforeach ?>
-                                </select>
-                              </div>
-                            </div>
+                              <?php echo form_open_multipart('welcome/do_upload');?>
+                              <div class="row form-group">
+                                <div class="col-md-6">
+                                  <label for="rescode">Kode Reservasi</label>
+                                  <input type="text" name="rescode" id="rescode" class="form-control" placeholder="Massukan Kode" required>
+                                </div>
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="tanggal">Tanggal</label>
-                                <input type="date" name="tanggal" id="tanggal" class="form-control" required>
-                              </div>
-                            </div>
+                                <div class="col-md-6">
+                                  <label for="buktifile">Pilih File</label>
+                                  <input type="file" name="buktifile" id="buktifile" class="form-control" required>
+                                </div>
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <input type="submit" class="btn btn-primary btn-block" value="Kirim">
+
                               </div>
-                            </div>
-                          </form> 
+                              <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4">
+                                  <input type="submit" class="form-control btn btn-primary" value="Kirim">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>

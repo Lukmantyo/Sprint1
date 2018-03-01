@@ -5,7 +5,7 @@
 </head>
 <body>
 	<center>
-		<h1>Edit Data</h1>
+		<h1>Input Data</h1>
 		<h3>Tambah data baru</h3>
 	</center>
 	<form action="<?php echo base_url(). 'index.php/crud/tambah_aksi'; ?>" method="post">

@@ -28,29 +28,29 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 	
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/animate.css">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/icomoon.css">
 	<!-- Themify Icons-->
-	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/themify-icons.css">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/bootstrap.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/magnific-popup.css">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/bootstrap-datepicker.min.css">
 
 	<!-- Owl Carousel  -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/owl.theme.default.min.css">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="<?php echo base_url(); ?>gudang/traveler/css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/modernizr-2.6.2.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -70,22 +70,13 @@
 			
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">Tiket Pesawat <em>.</em></a></div>
+					<div id="gtco-logo"><a href="<?php echo base_url(); ?>">Tiket Pesawat <em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li><a href="destination.html">Destinasi</a></li>
-						<li class="has-dropdown">
-							<a href="#">Travel</a>
-							<ul class="dropdown">
-								<li><a href="eropa.html">Eropa</a></li>
-								<li><a href="asia.html">Asia</a></li>
-								<li><a href="lokal.html">Lokal</a></li>
-								<li><a href="lainnya.html">Lainnya</a></li>
-							</ul>
-						</li>
-						<li><a href="pricing.html">Maskapai</a></li>
-						<li class="active"><a href="contact.html">Contact</a></li>
+						<li><a href="<?php echo base_url(); ?>welcome/rute">Rute</a></li>
+						<li><a href="<?php echo base_url(); ?>welcome/login">Login</a></li>
+						<li class="active"><a href="<?php echo base_url(); ?>welcome/contact">Contact</a></li>
 					</ul>	
 				</div>
 			</div>
@@ -189,10 +180,10 @@
           <div class="gtco-widget">
             <h3>Rute</h3>
             <ul class="gtco-footer-links">
-              <li><a href="eropa.html">Eropa</a></li>
-              <li><a href="asia.html">Asia</a></li>
-              <li><a href="lokal.html">Lokal</a></li>
-              <li><a href="lainnya.html">Lainnya</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/eropa.html">Eropa</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/asia.html">Asia</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/lokal.html">Lokal</a></li>
+              <li><a href="<?php echo base_url(); ?>gudang/traveler/lainnya.html">Lainnya</a></li>
             </ul>
           </div>
         </div>
@@ -251,31 +242,31 @@
 	</div>
 	
 	<!-- jQuery -->
-	<script src="js/jquery.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
-	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->
-	<script src="js/bootstrap.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/bootstrap.min.js"></script>
 	<!-- Waypoints -->
-	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.waypoints.min.js"></script>
 	<!-- Carousel -->
-	<script src="js/owl.carousel.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/owl.carousel.min.js"></script>
 	<!-- countTo -->
-	<script src="js/jquery.countTo.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.countTo.js"></script>
 
 	<!-- Stellar Parallax -->
-	<script src="js/jquery.stellar.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.stellar.min.js"></script>
 
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/jquery.magnific-popup.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/magnific-popup-options.js"></script>
 	
 	<!-- Datepicker -->
-	<script src="js/bootstrap-datepicker.min.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/bootstrap-datepicker.min.js"></script>
 	
 
 	<!-- Main -->
-	<script src="js/main.js"></script>
+	<script src="<?php echo base_url(); ?>gudang/traveler/js/main.js"></script>
 
 	</body>
 </html>

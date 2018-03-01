@@ -1,5 +1,5 @@
 <?php 
- 
+defined('BASEPATH') OR exit('No direct script access allowed');
  
 class Crud extends CI_Controller{
  
@@ -14,7 +14,6 @@ class Crud extends CI_Controller{
 		$data['user'] = $this->m_data->tampil_data()->result();
 		$this->load->view('v_tampil',$data);
 	}
- 
 	function tambah(){
 		$this->load->view('v_input');
 	}

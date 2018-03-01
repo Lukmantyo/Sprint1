@@ -89,56 +89,87 @@
           <div class="row">
             <div class="col-md-12 col-md-offset-0 text-left">
               <div class="row row-mt-15em">
-                <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
-                  <h1>Cari Destinasi Liburan Anda !</h1>  
-                </div>
-                <div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
+                <div class="col-md-12 mt-text animate-box form-wrap" data-animate-effect="fadeInUp">
+                  <h1>Isi data diri & Tempat duduk</h1>  
+                  
                   <div class="form-wrap">
-                    <div class="tab">
+                    <div class="tab" style="margin-top: 20px">
                       <div class="tab-content" style="bottom: 30px; border-bottom:100px; "> 
                         <div class="tab-content-inner active" data-content="signup">
-                          <h3>Temukan Perjalanan</h3>
-                          <form action="<?php echo base_url('welcome/cari'); ?>" method="get">
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="from">Rute Dari</label>
-                                <select name="from" id="from" class="form-control" required>
-                                  <?php foreach ($rute as $row): ?>
-                                    <option value="<?php echo $row->rute_from; ?>"><?php echo $row->rute_from; ?></option>
-                                  <?php endforeach ?>
-                                </select>
-                              </div>
-                            </div>
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="to">Rute Dari</label>
-                                <select name="to" id="to" class="form-control" required>
-                                  <?php foreach ($rute as $row): ?>
-                                    <option value="<?php echo $row->rute_to; ?>"><?php echo $row->rute_to; ?></option>
-                                  <?php endforeach ?>
-                                </select>
-                              </div>
-                            </div>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <h3>Data Diri</h3>
+                              <form action="<?php echo base_url('welcome/reservasi'); ?>" method="post">
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <label for="name">Nama</label>
+                                    <input type="hidden" name="idrute" value="<?php echo $idrute; ?>">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Massukan Namamu" required>
+                                  </div>
+                                </div>
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <label for="tanggal">Tanggal</label>
-                                <input type="date" name="tanggal" id="tanggal" class="form-control" required>
-                              </div>
-                            </div>
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <label for="addr">Alamat</label>
+                                    <input type="text" name="addr" id="addr" class="form-control" placeholder="Massukan Alamat Rumah mu" required>
+                                  </div>
+                                </div>
 
-                            <div class="row form-group">
-                              <div class="col-md-12">
-                                <input type="submit" class="btn btn-primary btn-block" value="Kirim">
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <label for="phone">No. Telepon</label>
+                                    <input type="text" name="phone" id="phone" class="form-control" placeholder="Massukan Nomor Telepon" required>
+                                  </div>
+                                </div>
+
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <label for="email">Email</label>
+                                    <input type="text" name="email" id="email" class="form-control" placeholder="Massukan Emailmu" required>
+                                  </div>
+                                </div>
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <label for="gender">Jenis Kelamin</label>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <label for="gender"><input type="radio" name="gender" id="gender" required value="1"> Laki - Laki</label>
+                                    <label for="gender"><input type="radio" name="gender" id="gender" required value="0"> Perempuan</label>
+                                  </div>
+                                </div>
+
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <input type="submit" class="btn btn-primary btn-block" value="Cari">
+                                  </div>
+                                </div>
+
                               </div>
-                            </div>
-                          </form> 
+                              <div class="col-md-6">
+                                <h3>Tempat Duduk</h3>
+                                <div class="row form-group">
+                                  <div class="col-md-12">
+                                    <div class="row">
+                                      <?php for ($i=1; $i <= $seat; $i++):?> 
+                                        <div class="col-md-2">
+                                          <label for="seat"><input type="radio" name="seat" value="<?php echo $i; ?>" required><?php echo $i; ?></label>
+                                        </div>
+                                      <?php endfor; ?>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </form> 
+                          </div>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
+
                 </div>
+
               </div>
             </div>
           </div>
