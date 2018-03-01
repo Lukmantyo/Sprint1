@@ -9,7 +9,7 @@
 		<h3>Update Data</h3>
 	</center>
 	<?php foreach($user as $u){ ?>
-	<form action="<?php echo base_url(). 'index.php/crud/update'; ?>" method="post">
+	<form action="<?php echo base_url(). 'crud/update'; ?>" method="post">
 		<table style="margin:20px auto;">
 			<tr>
 				<td>Id</td>

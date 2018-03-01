@@ -95,7 +95,7 @@ class Welcome extends CI_Controller {
 		);
 
 		$this->m_data->insert_res($datareservasi);
-		redirect(base_url('welcome/pembayaran'.$rescode));
+		redirect(base_url('welcome/pembayaran/'. $rescode));
 	}
 
 	function pembayaran($rescode){
@@ -150,7 +150,9 @@ class Welcome extends CI_Controller {
 	function rute(){
 		$this->load->view('rute');
 	}
-
+	function trans(){
+		$this->load->view('admintrans');
+	}
 	function contact(){
 		$this->load->view('contact');
 	}

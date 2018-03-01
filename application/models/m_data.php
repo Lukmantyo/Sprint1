@@ -40,6 +40,7 @@ class M_data extends CI_Model{
 		return $this->db->get('rute');
 	}
 
+
 	function get_rute_by_id($id){
 		$this->db->where('id', $id);
 		return $this->db->get('rute');
@@ -76,7 +77,9 @@ class M_data extends CI_Model{
 	// end fungsi model database > reservasi
 
 	//fungsi model database > transport
-
+	function gets_trans(){
+		return $this->db->get('transportation');
+	}
 	function get_trans_by_id($id){
 		$this->db->where('id', $id);
 		return $this->db->get('transportation');

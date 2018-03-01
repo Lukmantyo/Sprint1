@@ -122,6 +122,12 @@
                                     <td colspan="3">Kode Reservasi: <input type="text" value="<?php echo $rescode; ?>" class="form-control" disabled></td>
                                   </tr>
                                 </tfoot>
+                                <table class="table table-responsive">
+                                <thead>
+                                  <tr>
+                                    <th>Jika sudah, masukkan buktinya disini <a href="<?php echo site_url('welcome/bukti'); ?>">Bukti</a></th>
+                                  </tr>
+                                </thead>
                               </table>
                           </div>
                           

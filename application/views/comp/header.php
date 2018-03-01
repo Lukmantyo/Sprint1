@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Blank Page</title>
+  <title>AdminLTE 2</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -92,7 +92,7 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="welcome" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
@@ -123,18 +123,11 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="<?php echo base_url(); ?>gudang/adminlte/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="<?php echo base_url(); ?>gudang/adminlte/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
-          </ul>
-        </li>
+        <li><a href="<?php echo base_url('admin'); ?>"><i class="fa fa-home"></i><span>Home</span></a></li>
+        <li><a href="<?php echo base_url('Admin/ruteadmin'); ?>"><i class="fa fa-map"></i><span>Rute</span></a></li>
+        <li><a href="<?php echo base_url('Admin/trans'); ?>"><i class="fa fa-plane"></i><span>Trans</span></a></li>
+
+
        
       </ul>
     </section>
